@@ -15,11 +15,11 @@ Fridays at 4:00pm EST, in Stevens Lab (Stevens 118)
 ## Schedule
 Friday, September 6th 
 - [x] Interest Meeting 
-- [x] Plan Future Meetings, Schedule Workshops etc. 
+- [x] Plan Future Meetings, Schedule Workshops etc. \
 Friday, September 13th 
 - [ ] Vim Workshop
 - [ ] Vim Golf
-- [ ] Feedback on Semester Schedule
+- [ ] Feedback on Semester Schedule \
 Friday, September 20th 
 Friday, September 27th 
 Friday, October 4th 

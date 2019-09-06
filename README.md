@@ -8,6 +8,7 @@ This information is up to date for the **FALL 2019** semester.
 - Joseph Kelly, Vice-President (joseph.kelly@live.longwood.edu)
 - Joshua Obernesser, Secretary (joshua.obernesser@live.longwood.edu)
 - Jordan Berkompas, Treasurer (jordan.berkompas@live.longwood.edu)
+- Dr. Julian Dymacek, Faculty Advisor (dymacekjm@longwood.edu)
 
 ## Meeting Time and Location
 Fridays at 4:00pm EST, in Stevens Lab (Stevens 118)
@@ -33,3 +34,12 @@ Fridays at 4:00pm EST, in Stevens Lab (Stevens 118)
 | Friday, December 2nd   |
 | Friday, December 9th   |
 
+## Useful Links
+[Association for Computing Machinery](https://www.acm.org/) \
+[Longwood University Computer Science (Department Page)](http://cs.longwood.edu/) \
+[Longwood Mathematics and Computer Science](http://www.longwood.edu/mathematics/) \
+[Longwood Mathematics and Computer Science (Faculty)](http://www.longwood.edu/mathematics/about/faculty-staff/)
+
+### Related Clubs and Organizations
+Longwood Cybersecurity Club \
+Longwood Chess Club

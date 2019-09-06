@@ -13,23 +13,23 @@ This information is up to date for the **FALL 2019** semester.
 Fridays at 4:00pm EST, in Stevens Lab (Stevens 118)
 
 ## Schedule
-Friday, September 6th 
-- [x] Interest Meeting 
-- [x] Plan Future Meetings, Schedule Workshops etc. \
-Friday, September 13th 
-- [ ] Vim Workshop
-- [ ] Vim Golf
-- [ ] Feedback on Semester Schedule \
-Friday, September 20th 
-Friday, September 27th 
-Friday, October 4th 
-Friday, October 11th 
-Friday, October 20th 
-Friday, October 27th 
-Friday, November 4th 
-Friday, November 11th 
-Friday, November 18th 
-Friday, November 25th 
-Friday, December 2nd 
-Friday, December 9th 
+|          Date          | Planned Events |
+| ---------------------- | -------------- |
+| Friday, September 6th  | Interest Meeting Plan Future Meetings, Schedule Workshops etc.  |
+| Friday, September 13th | Vim Workshop, Vim Golf, Feedback on Semester Schedule |
+| Friday, September 20th | |
+| Friday, September 27th | |
+| September 28th - 29th  | RamHacks |
+| Friday, October 4th    |
+| Friday, October 11th   |
+| October 12th - 13th    | HackNC |
+| October 18th - 20th    | PatriotHacks |
+| Friday, October 20th   |
+| Friday, October 27th   |
+| Friday, November 4th   |
+| Friday, November 11th  |
+| Friday, November 18th  |
+| Friday, November 25th  |
+| Friday, December 2nd   |
+| Friday, December 9th   |
 

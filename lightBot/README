@@ -1,0 +1,5 @@
+/etc/rc.local
+  sudo python3 /home/pi/Cameron/lightBot/lights.py
+
+http://www.scraptopower.co.uk/Raspberry-Pi/how-to-connect-stepper-motors-a-raspberry-pi
+https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/using-a-pir-w-arduino

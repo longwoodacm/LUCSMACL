@@ -1,0 +1,21 @@
+#!/bin/csh
+#
+# File:    compilegcc
+# Purpose: Used to compile C and C++ with PC^2
+# Author:  pc2@ecs.csus.edu
+#
+# $HeadURL$
+#
+
+set e=
+set mainfile=$1
+set basename=`echo $mainfile | sed 's/\.[^\.]*$//'`
+set ext=`echo $mainfile | awk -F. '{print $NF}'`
+
+if ("x$ext" == "xcpp") then
+  $e g++ -lm -o $basename $mainfile
+else 
+  $e gcc -lm -o $basename $mainfile
+endif
+
+# eof $Id$

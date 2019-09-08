@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sign Up</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
+		<link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}">
+		<script type="text/javascript" src="{{url_for('static', filename='validate.js')}}"></script>
+	</head>
+	<body>
+		<form name='signup' id='signup' method='POST'>
+		<form method="POST" name="signup">
+			<!--Signup form-->
+			<div class="imgcontainer">
+				<img src="{{url_for('static', filename='logo.svg')}}" alt="Avatar" class="avatar">
+			</div>
+			<div class="container">
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+				<label for="firstName"><b>First Name</b></label>
+				<input type="text" placeholder="Enter First Name" name="firstName" required>
+				<label for="lastName"><b>Last Name</b></label>
+				<input type="text" placeholder="Enter Last Name" name="lastName" required>
+				<label for="password"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="password" required>
+				<label for="psw2"><b>Confirm Password</b></label>
+				<input type="password" placeholder="Confirm Password" name="psw2" required>
+				<label for="type"><b>Account Type</b></label><br />
+				<input type="radio" name="type" value="STUDENT" required>Student<br />
+				<input type="radio" name="type" value="INSTRUCTOR" required>Instructor<br />
+				<label for="Security Question:"><b>Choose a question:</b></label>
+				<br />
+				<select name="securityQuestion">
+					<option value="maidenName" selected> What is your mother's maiden name? </option>
+					<option value="petName"> What was the name of your first pet? </option>
+					<option value="firstStreet"> What is the name of the street on which you grew up? </option>
+					<option value="elemSchool"> What is the name of your elementary school? </option>
+					<option value="firstCar"> What is the name of your first car? </option>
+				</select>
+				<br />
+				<label for="answer"><b>Answer Your Question</b></label>
+				<input type="text" name="answer" />
+				<br>
+				<!--<div style="position:fixed; width:100%; left:25%">-->
+				<div>
+				<button type="button" name="signupButton" onclick="valid();">Sign Up</button>
+				<a href="{{url_for('login')}}"><button type="button">Back to Login</button></a>
+				</div>
+				<label>
+					<div name='errordiv' id='errmsg' class='errmsg'>{{loginerror}}</div>
+				</label>
+			</div>
+		</form>
+	</body>
+</html>

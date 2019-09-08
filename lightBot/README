@@ -1,5 +1,24 @@
 /etc/rc.local
   sudo python3 /home/pi/Cameron/lightBot/lights.py
 
-http://www.scraptopower.co.uk/Raspberry-Pi/how-to-connect-stepper-motors-a-raspberry-pi
-https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/using-a-pir-w-arduino
+Stepper Motor Help Pages:
+    http://www.scraptopower.co.uk/Raspberry-Pi/how-to-connect-stepper-motors-a-raspberry-pi
+    https://42bots.com/tutorials/28byj-48-stepper-motor-with-uln2003-driver-and-arduino-uno/
+PIR Motion Sensor Help Pages:
+    https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/using-a-pir-w-arduino
+Pi GPIO:
+    https://www.bigmessowires.com/2018/05/26/raspberry-pi-gpio-programming-in-c/
+
+3D-Printed Add-Ons:
+    Stepper Motor:
+        Cog:
+            https://www.thingiverse.com/thing:438093
+        Mount:
+            https://www.thingiverse.com/thing:438140
+            https://www.thingiverse.com/thing:558409
+            http://builder.mobilityshield.com/#examples/stl/Motor-Mount-28BYJ-48_M3INSERT.stl
+            https://www.thingiverse.com/thing:1215081
+    PIR Motion Sensor:
+        Mount:
+            https://www.thingiverse.com/thing:1871306
+            https://www.thingiverse.com/thing:3366814

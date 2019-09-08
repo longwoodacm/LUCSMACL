@@ -1,5 +1,5 @@
 import time
-import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO #Only works on Pi, workaround here:  https://raspberrypi.stackexchange.com/questions/34119/gpio-library-on-windows-while-developing
 
 
 def clear(StepPins):

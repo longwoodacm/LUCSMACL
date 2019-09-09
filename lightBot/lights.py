@@ -1,3 +1,10 @@
+#Author: Cameron Haddock
+#Last Modified: 9 September 2019
+#Purpose of File: 
+#   When this script is run, a properly connected motion sensor will periodically check for motion.
+#   When motion is detected, the arm of a properly configured stepper motor will turn.
+#   This is to be used for activating the motion sensor in Stevens 118.
+
 import time
 import RPi.GPIO as GPIO
 
@@ -7,7 +14,7 @@ def clear_power(StepPins):
   for pin in StepPins:
     GPIO.output(pin, False)
 
-#Move stepper motor forward
+#Move stepper motor clockwise
 def step_forward(Seq,steps):
   for step in range(steps):
     for pin in range(4):
@@ -17,7 +24,7 @@ def step_forward(Seq,steps):
         GPIO.output(StepPins[pin],False)
     time.sleep(0.00075)
 
-#Move stepper motor backward
+#Move stepper motor counter-clockwise
 def step_back(Seq,steps):
   for step in range(steps):
     for pin in range(4):

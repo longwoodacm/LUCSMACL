@@ -4,15 +4,15 @@
 #   This code is for running a flask server on acmpi in order to accept pings for activating lights
 
 from flask import Flask
-import subprocess
+import stepper
 
 app = Flask(__name__)
 app.config.from_object(__name__)
 
 @app.route('/lights')
 def lights():
-  #subprocess.call("stepper.py",shell=True)
+  stepper.main()
   return "Lights are turning on\n"
 
 if __name__ == "__main__":
-  app.run(host='localhost')
+  app.run(host='127.0.0.1')

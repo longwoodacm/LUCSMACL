@@ -1,15 +1,18 @@
-from flask import Flask, request
-import serial
+#Author: Cameron Haddock
+#Last Modified: 9 September 2019
+#Purpose of File: 
+#   This code is for running a flask server on acmpi in order to accept pings for activating lights
+
+from flask import Flask
+import subprocess
 
 app = Flask(__name__)
 app.config.from_object(__name__)
 
-ard = serial.Serial('/dev/ttyACM0', 9600)
-
 @app.route('/lights')
 def lights():
-  ard.write(bytes(str.encode('1')))
+  #subprocess.call("stepper.py",shell=True)
   return "Lights are turning on\n"
 
 if __name__ == "__main__":
-  app.run()
+  app.run(host='localhost')

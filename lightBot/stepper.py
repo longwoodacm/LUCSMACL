@@ -46,6 +46,9 @@ def main():
   GPIO.setmode(GPIO.BCM)
 
   StepPins = [17,18,27,22]  #Board pins [11,12,13,15]
+  for channel in StepPins:
+    GPIO.setup(channel,GPIO.out)
+
   Seq = [[1,0,0,0],
         [1,1,0,0],
         [0,1,0,0],

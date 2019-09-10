@@ -47,7 +47,7 @@ def main():
 
   StepPins = [17,18,27,22]  #Board pins [11,12,13,15]
   for channel in StepPins:
-    GPIO.setup(channel,GPIO.out)
+    GPIO.setup(channel,GPIO.OUT)
 
   Seq = [[1,0,0,0],
         [1,1,0,0],
@@ -63,7 +63,7 @@ def main():
   step_back(Seq,half_spin,StepPins)
   clear_power(StepPins)
 
-  print('loop')
+  print('Step')
 
 
 if __name__ == '__main__':

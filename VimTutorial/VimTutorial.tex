@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\author{Daniel Millson}
+% \date{Fall 2018}
+\title{Vim Tutorial}
+\usepackage{amsmath, amsthm, amssymb, amsfonts, physics, mathrsfs, mathtools}
+\usepackage{interval}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{textcomp}
+\usepackage[letterpaper, margin=1in]{geometry}
+\begin{document}
+% \maketitle
+\section*{Vim Tutorial}
+Note that all commands presented here must be used from command mode, which can be easily accessed be pressing the \textlangle{}ESC\textrangle{} key.
+\subsection*{Navigation Motions}
+Navigation forms the basis of all Vim commands. Not only do you use these commands to navigate a text file, you can also chain them with other commands to perform them over different ranges of words.
+\begin{description}
+	\item{\texttt{h l k j}} - Move the cursor one position left, right, up, and down, respectively. 
+	\item{\texttt{w b}} - Move the cursor forward and backward respectively to the \textit{beginning} of a word. 
+	\item{\texttt{e ge}} - Move the cursor forward and backward respectively to the \textit{end} of a word. 
+	\item{\texttt{( )}} - Move the cursor forward and backward respectively to the \textit{beginning} of a sentence.
+	\item{\texttt{\{ \}}} - Move the cursor forward and backward respectively to the \textit{beginning} of a paragraph.
+	\item{\texttt{\^~\$}} - Move the cursor to the first or last character of a line.
+	\item{\texttt{:\textit{n}}} - Jump to beginning of line \textit{n}
+	\item{\texttt{gg G}} - Jump to beginning or end of file
+	\item{\texttt{\%}} - Jump to corresponding parenthesis/curly bracket/square bracket of one under cursor
+\end{description}
+\subsection*{Editing Text - Enter Insert/Replace Modes}
+There are many ways to modify text in Vim, and many commands for changing text incorporate the functionality of different commands. These commands allow you to enter Insert and Replace modes after executing them. Many of these can be combined with a number before them to repeat it that many times (i.e. \texttt{10}\~~will change the case of 10 letters).
+\begin{description}
+	\item{\texttt{i a}} - Insert before, append after cursor
+	\item{\texttt{I A}} - Insert at beginning, append at end of line
+	\item{\texttt{o O}} - Open new line below, above current line, and insert
+	\item{\texttt{r\textit{c}}} - Replace current character with \textit{c}
+	\item{\texttt{R}} - Start replacing characters from cursor (Enter Replace Mode)
+	\item{\texttt{c\textit{m}}} - Change text in motion \textit{m} (See Navigation Motions)
+	\item{\texttt{cc S}} - Change entire current line (Both do the same thing) 
+	\item{\texttt{C}} - Change from current cursor until the end of current line
+	\item{\texttt{\~}} - Change case under cursor and move forward
+	\item{\texttt{<< >>}} - Indent current line to left or right
+\end{description}
+\newpage
+\subsection*{Editing Text - Outside of Insert/Replace Modes}
+In addition to changing text from inside of Insert and Replace modes, you can also edit text from outside. These commands are useful for restructuring text and moving large chunks of text around in a file, if need be. Similarly to the previous commands, these can be combined with numbers before them, to apply the command to several characters or lines.
+\begin{description}
+	\item{\texttt{y\textit{m}}} - Copy text from current cursor toward motion \textit{m}
+	\item{\texttt{yy Y}} - Copy current line (Both do the same thing)
+	\item{\texttt{d\textit{m}}} - Cut text from current cursor toward motion \textit{m}
+	\item{\texttt{dd D}} - Cut current line (Both do the same thing)
+	\item{\texttt{p P}} - Paste contents after or before, respectively, cursor position
+	\item{\texttt{J}} - Join the current line with the next, leaving no space between 
+	\item{\texttt{.}} - Repeat last change in text
+\end{description}
+\subsection*{Searching}
+Searching in Vim is useful for finding instances of a word you may want to change, or to check the function signature when you can't remember exactly what parameters it takes.
+\begin{description}
+	\item{\texttt{/\textit{string}}} - Search for \textit{string}, moving cursor to next instance and highlighting it in the window
+	\item{\texttt{n N}} - Move to the next or previous instance of the last searched string
+\end{description}
+\subsection*{Folds}
+Folds are an advanced but excellent utility in Vim, allowing you to condense your code so that it is immensely more readable while you are working on it. 
+\begin{description}
+	\item{\texttt{zf\textit{m}}} - Create a fold toward motion \textit{m}
+	\item{\texttt{zo zc}} - Open or close a fold, respectively (Can by anywhere in range of fold)
+	\item{\texttt{zd zE}} - Delete current fold or delete all folds
+\end{description}
+\subsection*{Other Useful Commands}
+Here are some miscellaneous commands that are useful for every developer. 
+\begin{description}
+	\item{\texttt{gg=G}} - Note that \texttt{gg} and \texttt{G} are both motions. The command \texttt{=}\textit{m} performs auto-indentation toward motion \textit{m}. Running the command \texttt{gg=G} will jump to the beginning of the file and auto-indent until the end of the file.
+	\item{\texttt{K}} - Note that \texttt{K} is capitalized. This command will search the Unix manual pages for the word under the cursor. This is excellent for looking up functions and function signatures. You can exit this by typing \texttt{q}.
+	\item{\texttt{gf}} - This opens the file under the cursor. It saves and quits the current file and will replace it with the newly opened file. This is useful if, for example, you finish editing an implementation file and need to go back to the header file.
+\end{description}
+\end{document}

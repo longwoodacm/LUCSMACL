@@ -19,20 +19,22 @@ Fridays at 4:00pm EST, in Stevens Lab (Stevens 118)
 | Friday, September 6th  | Interest Meeting Plan Future Meetings, Schedule Workshops etc.  |
 | Friday, September 13th | ~~Vim Workshop, Vim Golf~~, Feedback on Semester Schedule |
 | Friday, September 20th | Logisticts, Raspberry Pi Cluster Budgeting, 3D Printing |
-| Friday, September 27th | [No-Op Challenged](https://noopschallenge.com/), RamHacks Preparation, Vim Workshop, Vim Golf|
+| Friday, September 27th | [No-Op Challenges](https://noopschallenge.com/), RamHacks Preparation, Vim Workshop, Vim Golf|
 | September 28th - 29th  | RamHacks |
 | Friday, October 4th    |
+| Saturday, October 5th  | Longwood Oktoberfest |
 | Friday, October 11th   |
-| October 12th - 13th    | HackNC |
-| October 18th - 20th    | PatriotHacks |
-| Friday, October 20th   |
-| Friday, October 27th   |
-| Friday, November 4th   |
-| Friday, November 11th  |
-| Friday, November 18th  |
-| Friday, November 25th  |
-| Friday, December 2nd   |
-| Friday, December 9th   |
+| October 12th - 13th    | [HackNC](https://hacknc.com/) |
+| October 18th - 20th    | [PatriotHacks]() |
+| Friday, October 18th   |
+| Friday, October 25th   |
+| Friday, November 1st   |
+| Saturday, November 2nd | [MetaCTF](https://metactf.com/) |
+| Friday, November 8th  |
+| Friday, November 15th  |
+| Friday, November 22nd  |
+| Friday, November 29th   |
+| Friday, December 6th   |
 
 ## Useful Links
 [Association for Computing Machinery](https://www.acm.org/) \

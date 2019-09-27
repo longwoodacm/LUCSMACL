@@ -18,7 +18,7 @@ Fridays at 4:00pm EST, in Stevens Lab (Stevens 118)
 | ---------------------- | -------------- |
 | Friday, September 6th  | Interest Meeting Plan Future Meetings, Schedule Workshops etc.  |
 | Friday, September 13th | ~~Vim Workshop, Vim Golf~~, Feedback on Semester Schedule |
-| Friday, September 20th | Logisticts, Raspberry Pi Cluster Budgeting, 3D Printing |
+| Friday, September 20th | Logistics, Raspberry Pi Cluster Budgeting, 3D Printing |
 | Friday, September 27th | [No-Op Challenges](https://noopschallenge.com/), RamHacks Preparation, Vim Workshop, Vim Golf|
 | September 28th - 29th  | RamHacks |
 | Friday, October 4th    |

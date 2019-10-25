@@ -39,22 +39,54 @@ def step_back(Seq,steps,StepPins):
     sleep(0.00075)
 
 
+def valid_time(start,end,days):
+  week = "MTWHFSU"
+  today = week[datetime.today().weekday()]
+  print(today,days)
+  if today not in days:
+    return True
+  
+  startTime = datetime.strptime(start,'%H:%M')
+  endTime = datetime.strptime(end,'%H:%M')
+  now = datetime.now().replace(day=1,month=1,year=1900,microsecond=0)
+  if startTime < now < endTime:
+    return False
+  return True
+
 def log(source):
-  conn = sqlite3.connect('/home/pi/LUCSMACL/lightBot/log.db')
+  conn = sqlite3.connect('/home/pi/LUCSMACL/lightBot/bot.db')
   cur = conn.cursor()
   dt = datetime.now();
-  stmt = """INSERT INTO lightLog(source,datetime) VALUES (?,?)"""
+  stmt = """INSERT INTO log(source,datetime) VALUES (?,?)"""
   cur.execute(stmt,(source,dt))
   conn.commit()
   conn.close()
 
-def main():
+def step(source):
   # 64 Steps per internal revolution * 63.684 gear ratio = aprox 4076 
   # https://42bots.com/tutorials/28byj-48-stepper-motor-with-uln2003-driver-and-arduino-uno/
   full_spin = 4076
   half_spin = int(full_spin/2)
   quar_spin = int(full_spin/4)
-  
+
+  conn = sqlite3.connect('/home/pi/LUCSMACL/lightBot/bot.db')
+  cur = conn.cursor()
+  request = """SELECT name,start,end,days,source FROM rules WHERE source = ? OR source = 'all';"""
+  cur.execute(request,(source,))
+  rules = cur.fetchall()
+  print(rules)
+  conn.close()
+  conflicts = [rule for rule in rules if not valid_time(rule[1],rule[2],rule[3])]
+      
+        
+  if len(conflicts) > 0:
+    string = "Failed to activate stepper motor due to time conflicts: ("
+    for rule in conflicts:
+      string = string + ' ' + rule[0] + ': ' + rule[4]
+    string = string + ')'
+    return string
+ 
+  log(source)
 
   #For additional GPIO documentation, visit: https://sourceforge.net/p/raspberry-gpio-python/wiki/BasicUsage/
   GPIO.setwarnings(False)
@@ -78,8 +110,9 @@ def main():
   step_back(Seq,half_spin,StepPins)
   clear_power(StepPins)
 
-  print('Step',file=stderr)
+  return "Stepped successfully"
+  #print('Step',file=stderr)
 
 
 if __name__ == '__main__':
-  main()
+	step('manual');

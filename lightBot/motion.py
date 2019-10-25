@@ -23,18 +23,19 @@ while True:
   if i != old:
     print("State changed",i)
     if i == True:
-      conn = sqlite3.connect('/home/pi/LUCSMACL/lightBot/log.db')
+      conn = sqlite3.connect('/home/pi/LUCSMACL/lightBot/bot.db')
       cur = conn.cursor()
-      request = """SELECT datetime FROM lightLog WHERE source='motion' ORDER BY datetime DESC;"""
+      request = """SELECT datetime FROM log WHERE source='motion' ORDER BY datetime DESC;"""
       cur.execute(request)
       dt = cur.fetchone()
-
       conn.close()
-      lastTime = datetime.strptime(dt[0].split('.',1)[0], '%Y-%m-%d %H:%M:%S') #2019-10-18 19:23:32.679844
-      fiveMins = (datetime.now() - timedelta(minutes = 5)) > lastTime
+
+      fiveMins = True
+      if dt is not None:
+        lastTime = datetime.strptime(dt[0].split('.',1)[0], '%Y-%m-%d %H:%M:%S') #2019-10-18 19:23:32.679844
+        fiveMins = (datetime.now() - timedelta(minutes = 5)) > lastTime
 
       if fiveMins:
-        stepper.log('motion')
-        stepper.main()
+        print(stepper.step('motion'))
   old = i
   time.sleep(0.01)

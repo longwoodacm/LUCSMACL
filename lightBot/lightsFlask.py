@@ -11,9 +11,7 @@ app.config.from_object(__name__)
 
 @app.route('/lights')
 def lights():
-  stepper.log('flask')
-  stepper.main()
-  return "Lights are turning on\n"
+  return stepper.step('flask')
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0')

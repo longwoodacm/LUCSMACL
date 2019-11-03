@@ -42,7 +42,7 @@ def step_back(Seq,steps,StepPins):
 def valid_time(start,end,days):
   week = "MTWHFSU"
   today = week[datetime.today().weekday()]
-  print(today,days)
+  #print(today,days)
   if today not in days:
     return True
   
@@ -74,7 +74,7 @@ def step(source):
   request = """SELECT name,start,end,days,source FROM rules WHERE source = ? OR source = 'all';"""
   cur.execute(request,(source,))
   rules = cur.fetchall()
-  print(rules)
+  #print(rules)
   conn.close()
   conflicts = [rule for rule in rules if not valid_time(rule[1],rule[2],rule[3])]
       

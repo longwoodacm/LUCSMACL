@@ -1,5 +1,17 @@
-/etc/rc.local
-    sudo python3 /home/pi/Cameron/lightBot/lights.py
+Created by Cameron Haddock
+Assistance from Daniel Millson, Jacob Carney, Heather Switzer
+Last updated 4 November 2019
+
+Purpose:
+	The purpose of this project is to provide an easy way to activate a stepper motor from a variety of sources.
+	This was done because the LUCSMACL has motion sensor lights hidden behind a wall, and we didn't want to get up.
+	The project currently supports activation from a motion sensor and from a flask server that receives GET requests.
+
+	The project logs each time it is activated. This should be modified in the future if the log begins to grow too large.
+	Each time the motor is activated it should rotate 180 degrees clockwise and then 180 degrees counter clockwise.
+	
+
+
 
 
 References and Tutorials: 
@@ -14,15 +26,13 @@ References and Tutorials:
         https://sourceforge.net/p/raspberry-gpio-python/wiki/BasicUsage/
 
 3D-Printed Add-Ons:
-    Stepper Motor:
         Cog:
             https://www.thingiverse.com/thing:438093
-        Mount:
-            https://www.thingiverse.com/thing:438140
-            https://www.thingiverse.com/thing:558409
-            http://builder.mobilityshield.com/#examples/stl/Motor-Mount-28BYJ-48_M3INSERT.stl
+        Stepper Motor Mount:
             https://www.thingiverse.com/thing:1215081
-    PIR Motion Sensor:
-        Mount:
-            https://www.thingiverse.com/thing:1871306
+        Motion Sensor Enclosure:
             https://www.thingiverse.com/thing:3366814
+		Stepper Motor Arm:
+			https://www.thingiverse.com/thing:2907072
+		Stepper Motor Driver Base:
+			Need to find again

@@ -9,7 +9,7 @@ import stepper
 app = Flask(__name__)
 app.config.from_object(__name__)
 
-@app.route('/lights')
+@app.route('/lights', methods=["GET", "POST"])
 def lights():
   return stepper.step('flask')
 

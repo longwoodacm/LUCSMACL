@@ -13,15 +13,18 @@ Purpose:
 	
 File Descriptions:
 	stepper.py
-		Uses Raspberry Pi GPIO pins to move a stepper motor and activate the motion sensor in the lab. Functions from this file can be imported and used in other scripts, allowing for many different triggers for the stepper motor.
+		Uses Raspberry Pi GPIO pins to move a stepper motor and activate the motion sensor in the lab. Functions from this 
+		 file can be imported and used in other scripts, allowing for many different triggers for the stepper motor.
 	motion.py
-		Uses Raspberry Pi GPIO pins to detect motion and trigger the stepper motor. 
+		Uses Raspberry Pi GPIO pins to detect motion with a PIR motion sensor then trigger the stepper motor. 
 	lightsFlask.py
 		Hosts a flask server to trigger the stepper motor.
 	interface.py
 		Used to establish times that the stepper motor will not be activatable
 	lights.py (deprecated)
-		A previously used python 3 script that both searches for motion in motion sensor and activates stepper motor. This was deprecated in favor of stepper.py and motion.py, allowing the code of stepper.py to be executed by a variety of sources without rewriting code.
+		A previously used python 3 script that both searches for motion in motion sensor and activates stepper motor. This 
+		 was deprecated in favor of stepper.py and motion.py, allowing the code of stepper.py to be executed by a variety of 
+		 sources without rewriting code.
 
 
 References and Tutorials: 

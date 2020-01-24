@@ -1,5 +1,13 @@
+#!/usr/bin/env python3
+
+#Author: Cameron Haddock
+#Last Modified: 9 September 2019
+#Purpose of File: 
+# Used to establish times that the stepper motor will not be activatable
+
 import sqlite3
 
+#Determine if time is a valid time
 def valid_time(time):
   if ':' not in time:
     return False
@@ -16,6 +24,7 @@ def valid_time(time):
 
   return True
 
+#Determine if time is on a valid day
 def valid_days(time):
   days = "MTWHFSU"
   for day in time:
@@ -26,12 +35,14 @@ def valid_days(time):
       return False
   return True
 
+#Pointless function to pad left with spaces. Theres a library function for this
 def pad_spaces(string,length):
   string = ' ' + string
   while(len(string) < length):
     string = string + ' '
   return string
 
+#Return all rules matching the name, or all if no name is given
 def get_all(cur,match):
   if match == '':
     request = """SELECT name,start,end,days,desc FROM rules;"""
@@ -42,6 +53,7 @@ def get_all(cur,match):
   rules = cur.fetchall()
   return rules;
 
+#Print all rows in given rows as rules
 def print_all(rows):
   print('Existing Rules:\n\n    Name        | Start        | End        | Days        | Description')
   print('    -------------------------------------------------------------------')
@@ -52,8 +64,6 @@ def print_all(rows):
     print(pad_spaces(str(rule[2]),12) + '|',end='')
     print(pad_spaces(str(rule[3]),13) + '|',end='')
     print(' ' + rule[4])
-
-
 
 
 def main():

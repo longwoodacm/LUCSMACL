@@ -1,17 +1,27 @@
-Created by Cameron Haddock
-Assistance from Daniel Millson, Jacob Carney, Heather Switzer
-Last updated 4 November 2019
+Created by Cameron Haddock 
+Assistance from Jacob Carney, Daniel Millson, Heather Switzer
+Thanks to Dr. Dymacek and Dr. Marmorstein
+Last updated 23 January 2020
 
 Purpose:
-	The purpose of this project is to provide an easy way to activate a stepper motor from a variety of sources.
+	The purpose of this project is to provide an easy way to activate a 28byj-48 stepper motor from a variety of sources.
 	This was done because the LUCSMACL has motion sensor lights hidden behind a wall, and we didn't want to get up.
 	The project currently supports activation from a motion sensor and from a flask server that receives GET requests.
 
 	The project logs each time it is activated. This should be modified in the future if the log begins to grow too large.
 	Each time the motor is activated it should rotate 180 degrees clockwise and then 180 degrees counter clockwise.
 	
-
-
+File Descriptions:
+	stepper.py
+		Uses Raspberry Pi GPIO pins to move a stepper motor and activate the motion sensor in the lab. Functions from this file can be imported and used in other scripts, allowing for many different triggers for the stepper motor.
+	motion.py
+		Uses Raspberry Pi GPIO pins to detect motion and trigger the stepper motor. 
+	lightsFlask.py
+		Hosts a flask server to trigger the stepper motor.
+	rules.py
+		Used to establish times that the stepper motor will not be activatable
+	lights.py (deprecated)
+		A previously used python 3 script that both searches for motion in motion sensor and activates stepper motor. This was deprecated in favor of stepper.py and motion.py, allowing the code of stepper.py to be executed by a variety of sources without rewriting code.
 
 
 References and Tutorials: 

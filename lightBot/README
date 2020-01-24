@@ -18,7 +18,7 @@ File Descriptions:
 		Uses Raspberry Pi GPIO pins to detect motion and trigger the stepper motor. 
 	lightsFlask.py
 		Hosts a flask server to trigger the stepper motor.
-	rules.py
+	interface.py
 		Used to establish times that the stepper motor will not be activatable
 	lights.py (deprecated)
 		A previously used python 3 script that both searches for motion in motion sensor and activates stepper motor. This was deprecated in favor of stepper.py and motion.py, allowing the code of stepper.py to be executed by a variety of sources without rewriting code.

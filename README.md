@@ -1,40 +1,22 @@
 # Longwood University ACM Chapter
 Welcome to the GitHub page for Longwood University's chapter of the Association for Advanced Machinery! Here you will find all the information you need about the club, including officers, meeting times, semesterly schedules and events, contact information, and more!
 
-This information is up to date for the **FALL 2019** semester.
+This information is up to date for the **Spring 2020** semester.
 
 ## Officers
 - Daniel Millson, President (daniel.millson@live.longwood.edu)
 - Joseph Kelly, Vice-President (joseph.kelly@live.longwood.edu)
-- Joshua Obernesser, Secretary (joshua.obernesser@live.longwood.edu)
 - Jordan Berkompas, Treasurer (jordan.berkompas@live.longwood.edu)
 - Dr. Julian Dymacek, Faculty Advisor (dymacekjm@longwood.edu)
 
 ## Meeting Time and Location
-Fridays at 4:00pm EST, in Stevens Lab (Stevens 118)
+Thursdays at 4:00pm EST, in Stevens Lab (Stevens 118)
 
 ## Schedule
 |          Date          | Planned Events |
 | ---------------------- | -------------- |
-| Friday, September 6th  | Interest Meeting Plan Future Meetings, Schedule Workshops etc.  |
-| Friday, September 13th | ~~Vim Workshop, Vim Golf~~, Feedback on Semester Schedule |
-| Friday, September 20th | Logistics, Raspberry Pi Cluster Budgeting, 3D Printing |
-| Friday, September 27th | [No-Op Challenges](https://noopschallenge.com/), RamHacks Preparation, Vim Workshop, Vim Golf|
-| September 28th - 29th  | RamHacks |
-| Friday, October 4th    | No meeting (Prep for Oktoberfest) |
-| Saturday, October 5th  | Longwood Oktoberfest |
-| Friday, October 11th   | No meeting (Prep for Fall Break) |
-| October 12th - 13th    | [HackNC](https://hacknc.com/) |
-| October 18th - 20th    | [PatriotHacks]() |
-| Friday, October 18th   | Officer's meeting |
-| Friday, October 25th   | Work on LightBot |
-| Friday, November 1st   | Finish LightBot! |
-| Saturday, November 2nd | [MetaCTF](https://metactf.com/) |
-| Friday, November 8th  | No meeting |
-| Friday, November 15th  | Machine Learning, Generative Adversarial Networks, TensorFlow, CMSC 389 |
-| Friday, November 22nd  | Golang Workshop, [No-Op Challenge](https://noopschallenge.com/) Competition |
-| Friday, November 29th   | No meeting (Thanksgiving Break) |
-| Friday, December 6th   | JavaScript Workshop, Node and Other Frameworks, Study Session |
+| Thursday, January 30th  | Vim and Git Workshop |
+| Thursday, Februrary 6th | Git and LaTeX Workshop, Hackathon announcements, etc. |
 
 ## Useful Links
 [Association for Computing Machinery](https://www.acm.org/) \

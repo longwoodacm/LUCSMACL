@@ -1,13 +1,8 @@
 # Longwood University ACM Chapter
 Welcome to the GitHub page for Longwood University's chapter of the Association for Advanced Machinery! Here you will find all the information you need about the club, including officers, meeting times, semesterly schedules and events, contact information, and more!
 
-<<<<<<< HEAD
 This information is up to date for the **Spring 2020** semester.
-=======
 Don't forget to checkout our [wiki](https://github.com/longwoodacm/LUCSMACL/wiki) for cool stuff!
-
-This information is up to date for the **FALL 2019** semester.
->>>>>>> d57df2c07838c60d4fb226cadde2d20b3ba15fff
 
 ## Officers
 - Daniel Millson, President (daniel.millson@live.longwood.edu)

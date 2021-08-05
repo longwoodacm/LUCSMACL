@@ -57,7 +57,7 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 # Fit the data to the model
-model.fit(train_images, train_labels, epochs=10)
+model.fit(train_images, train_labels, epochs=20)
 
 # Gather useful metrics
 test_loss, test_acc = model.evaluate(test_images, test_labels, verbose=2)

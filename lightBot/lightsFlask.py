@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 #Author: Cameron Haddock
 #Last Modified: 9 September 2019
 #Purpose of File: 
@@ -9,7 +11,7 @@ import stepper
 app = Flask(__name__)
 app.config.from_object(__name__)
 
-@app.route('/lights')
+@app.route('/lights', methods=["GET", "POST"])
 def lights():
   return stepper.step('flask')
 

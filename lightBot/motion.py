@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 #Author: Cameron Haddock
 #Last Modified: 9 September 2019
 #Purpose of File: 
@@ -30,7 +32,7 @@ while True:
       dt = cur.fetchone()
       conn.close()
 
-      fiveMins = True
+      fiveMins = False
       if dt is not None:
         lastTime = datetime.strptime(dt[0].split('.',1)[0], '%Y-%m-%d %H:%M:%S') #2019-10-18 19:23:32.679844
         fiveMins = (datetime.now() - timedelta(minutes = 5)) > lastTime

@@ -47,7 +47,7 @@ model = keras.Sequential([
     keras.layers.Flatten(input_shape=(28, 28)), # Input layer, 28x28=784 nodes
     keras.layers.Dense(128, activation='relu'), # Hidden layer, 128 nodes
     keras.layers.Dropout(0,2),
-    keras.layers.Dense(128, activation='sigmoid')
+    keras.layers.Dense(128, activation='sigmoid'),
     keras.layers.Dense(10, activation='softmax') # Output layer, 10 nodes
 ])
 

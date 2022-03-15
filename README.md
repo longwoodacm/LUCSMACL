@@ -5,7 +5,6 @@ This information is up to date for the **Spring 2020** semester.
 Don't forget to checkout our [wiki](https://github.com/longwoodacm/LUCSMACL/wiki) for cool stuff!
 
 ## Officers
-- Daniel Millson, President (daniel.millson@live.longwood.edu)
 - Joseph Kelly, Vice-President (joseph.kelly@live.longwood.edu)
 - Jordan Berkompas, Treasurer (jordan.berkompas@live.longwood.edu)
 - Dr. Julian Dymacek, Faculty Advisor (dymacekjm@longwood.edu)

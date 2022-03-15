@@ -5,18 +5,21 @@ This information is up to date for the **Spring 2020** semester.
 Don't forget to checkout our [wiki](https://github.com/longwoodacm/LUCSMACL/wiki) for cool stuff!
 
 ## Officers
-- Joseph Kelly, Vice-President (joseph.kelly@live.longwood.edu)
-- Jordan Berkompas, Treasurer (jordan.berkompas@live.longwood.edu)
+- Jacob Poteat, President (jacob.poteat@live.longwood.edu)
+- Morgan Magner, Vice-President (morgan.magner@live.longwood.edu)
+- John Eddy, Treasurer (john.eddy@live.longwood.edu)
+- Caitlin Wiley, Secretary (caitlin.wiley@live.longwood.edu)
+- Jacob Plas, Historian (jacob.plas@live.longwood.edu)
 - Dr. Julian Dymacek, Faculty Advisor (dymacekjm@longwood.edu)
 
 ## Meeting Time and Location
-Thursdays at 4:00pm EST, in Stevens Lab (Stevens 118)
+Wednesdays at 5:30 pm EST, in Stevens Lab (Stevens 118)
 
 ## Schedule
 |          Date          | Planned Events |
 | ---------------------- | -------------- |
-| Thursday, January 30th  | Vim and Git Workshop |
-| Thursday, Februrary 6th | Git and LaTeX Workshop, Hackathon announcements, etc. |
+| Wednesday, March 16th  | Git Workshop |
+| Saturday. April 23rd   | Computer Smashing Fundraiser |
 
 ## Useful Links
 [Association for Computing Machinery](https://www.acm.org/) \
